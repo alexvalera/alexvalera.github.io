@@ -8,36 +8,36 @@ hr {color: sienna;}
 h1 
 {
 font-family: 'Poiret One', cursive;
-font-size: 200px;
-color: white; 
+font-size: 150px;
+color: #36D7B7; 
 }
 
 h2 
 {
 font-family: 'Poiret One', cursive;
-font-size: 100px;
-color: white; 
+font-size: 80px;
+color: #81CFE0; 
 }
 
 h2 Alex
 {
 font-family: 'Poiret One', cursive;
-font-size: 100px;
+font-size: 90px;
 color: #3498db;
 }
 
 h3
 {
 font-family: 'Poiret One', cursive;
-font-size: 50px;
+font-size: 40px;
 color: #ffffff;
 }
 
 h3 colorswitch
 {
 font-family: 'Poiret One', cursive;
-font-size: 50px;
-color: #3498db;
+font-size: 40px;
+color: #336E7B;
 }
 
 p {
@@ -52,7 +52,8 @@ font-size: 30px;
 
 #landing
 {
-background-image: url("http://www.techandall.com/wp-content/uploads/2013/08/bg7.jpg");
+max-width: 1000px;
+background-color: #34495E;
 }
 
 .btn {
@@ -169,4 +170,15 @@ ul li.active {
 span {
     position: absolute;
     top: 0;
+}
+body {
+    max-width:1000px;
+    margin:auto;
+    background-color:#34495E;
+}
+
+h4 {
+    font-family: 'Poiret One', cursive;
+    color:#1abc9a;
+    font-size:25px;
 }
