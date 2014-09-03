@@ -7,38 +7,43 @@ hr {color: sienna;}
 
 h1 
 {
-font-family: 'Poiret One', cursive;
-font-size: 150px;
-color: #36D7B7; 
+font-family: 'Questrial', sans-serif;
+font-weight: 400;
+font-size: 75px;
+
 }
 
 h2 
 {
-font-family: 'Poiret One', cursive;
-font-size: 80px;
-color: #81CFE0; 
+font-family: 'Questrial', sans-serif;
+font-size: 50px;
+color:#C7F464;
+
 }
 
 h2 Alex
 {
-font-family: 'Poiret One', cursive;
+font-family: 'Questrial', sans-serif;
 font-size: 90px;
 color: #3498db;
 }
 
 h3
 {
-font-family: 'Poiret One', cursive;
-font-size: 40px;
-color: #ffffff;
+font-family: 'Questrial', sans-serif;
+font-size: 30px;
+color: #556270;
+margin-top: 20px;
 }
 
-h3 colorswitch
+h3 switch
 {
-font-family: 'Poiret One', cursive;
-font-size: 40px;
-color: #336E7B;
+font-family: 'Questrial', sans-serif;
+font-size: 30px;
+color: #fff;
 }
+
+
 
 p {
 font-family: 'Poiret One', cursive;
@@ -53,7 +58,7 @@ font-size: 30px;
 #landing
 {
 max-width: 1000px;
-background-color: #34495E;
+background-color: #212121;
 }
 
 .btn {
@@ -174,11 +179,83 @@ span {
 body {
     max-width:1000px;
     margin:auto;
-    background-color:#34495E;
+    background-color:#4ECDC4;
 }
 
 h4 {
     font-family: 'Poiret One', cursive;
     color:#1abc9a;
     font-size:25px;
+}
+
+.red {
+    color: #C44D58;
+}
+
+#box {
+    height:400px;
+    width:960px;
+    position:relative;
+    margin:auto 0;
+    
+    
+}
+
+.underline {
+ 
+    border-bottom: 2px solid white;
+   
+    float:left;
+
+}
+
+.non-underline {
+
+    float:left;
+    text-align:center;
+}
+
+#What {
+    clear:both;
+    text-align:center;
+    margin:auto 0;
+   
+}
+
+#work {
+    color: #FFF;
+}
+
+#intro {
+
+}
+
+#Who {
+    clear: both;
+      width: 960px;
+    margin-top: 25%; 
+     
+ 
+
+}
+
+#hello {
+    float:left;
+    padding:0px 5% 0px 15%;
+}
+
+#thing {
+    margin:auto 0;
+}
+
+#border-name {
+    height: 75px;
+    width: 650px;
+/*    border: 2px solid #C7F464;*/
+    padding-top:30px;
+    
+}
+
+#greeting {
+    margin-bottom: 20px;
 }
