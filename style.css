@@ -194,8 +194,7 @@ h4 {
 
 #box {
     height:400px;
-    width:960px;
-    position:relative;
+    width:940px;
     margin:auto 0;
     
     
@@ -259,3 +258,5 @@ h4 {
 #greeting {
     margin-bottom: 20px;
 }
+
+

@@ -34,7 +34,7 @@
 <div id = "border-name">
 <h2 id = "intro"> MY NAME IS ALEX VALERA.</h2>
 </div>
-<h3>I AM A <switch id = "work"> PROGRAMMER</switch> </h3>
+<h3 >I AM A <switch id = "work"> PROGRAMMER</switch> </h3>
 </div>
 </div>   
 <!--
@@ -98,7 +98,7 @@ var myVar2=setInterval(function(){GreetSwapFunc()},3000);
 function WorkSwapFunc() {
     var work = ["PROGRAMMER.", "WEB DEVELOPER.", "MUSIC PRODUCER."];
     document.getElementById("work").innerHTML = work[index];
-    $("#work").hide().fadeIn(1000);
+    $("#work").hide().fadeIn(300);
     index+=1;
     if (index > 2)
     {
@@ -109,7 +109,7 @@ function WorkSwapFunc() {
 function GreetSwapFunc() {
     var greetinglist = ["HELLO,", "NICE TO MEET YOU,", "HI THERE!"];
     document.getElementById("greeting").innerHTML = greetinglist[greetindex];
-    $("#greeting").hide().fadeIn(1000);
+    $("#greeting").hide().fadeIn(300);
     greetindex+=1;
     if (greetindex > 2)
     {
