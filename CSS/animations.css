@@ -432,8 +432,8 @@ fadeIn
 		-webkit-transform: scale(0);
 		opacity: 0.0;		
 	}
-	60% {
-		-webkit-transform: scale(1.1);
+	60% { /*Used to be 60*/
+		-webkit-transform: scale(1.1); /*Used to be 1.1*/
 	}
 	80% {
 		-webkit-transform: scale(0.9);

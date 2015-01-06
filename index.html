@@ -1,129 +1,58 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-
-        "http://www.w3.org/TR/html4/loose.dtd">
-
-
-
 <html lang="en">
-
-
-
 <head>
-
-
-
-	<meta http-equiv="content-type" content="text/html; charset=utf-8">
-    
-	<title>Alex Valera</title>
-
-	<link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="animations.css">
-    
-	<link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
-    
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-
+         
+<!--CSS-->
+<link rel="stylesheet" type="text/css" href="/CSS/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="/CSS/prettify.css">
+<link rel="stylesheet" type="text/css" href="/CSS/animations.css">
+<link rel="stylesheet" type="text/css" href="/CSS/style.css">
+<!--Google Fonts--> 
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+<!--Javascript-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
-
-
-
+    
 <body>
-<div id = "box">
-<div id ="Who" align = "center">
-<h1 class = "red" id = "greeting" >HELLO,</h1>
-<div id = "border-name">
-<h2 id = "intro"> MY NAME IS ALEX VALERA.</h2>
+
+<div class = "container-fluid">
+    <div class = "row">
+        <div align = "center" class = "col-xs-12 col-s-12- col-m-12 type">
+            <div class = "outer-container">
+            <div class = "type-container">
+            <h1 class = "first" >Hello</h1>
+            <p id = "myName" align = center>My name is Alex Valera.</p>
+            <p id = "description" align = left>
+            I hail from the Washington DC metropolitan area, and I am a computer science
+        student at Binghamton University in upstate New York. I love creating beautiful websites 
+        and poweful programs that can help businesses, organizations, or everyone. 
+            </p>
+            </div>
+            </div>
+        </div>
+    </div>
+
 </div>
-<br/>
-<div id = "iama">
-<h3 >I AM A <switch id = "work"> PROGRAMMER</switch> </h3>
-</div>
-</div>
-</div>   
-<!--
-
-<div id = "Who">
-<h2 class ="red" id = "hello">Hello,</h2>
-<h3 class = "underline" id = "intro">My name is Alex.</h3>
-</div>
-
-<div id = "What">
-<h3 class = "non-underline" >I am a </h3><h3 class = "underline" id = "work"> programmer.</h3>
-</div>
--->
-
-
-  
-
-<!--
-<br></br>
-<h2 class = "red" align = "left">Hey everyone</h2>
-<br></br>
-<h2 align = "left">My name is <Alex> Alex.</Alex></h2>
-
-
-<br/>
-<h4>I am a:</h4>
-<br/>    
-<h3 align = "left">Programmer { }  <colorswitch>Web Designer &lt;/&gt; </colorswitch>Music Producer</h3>
-<br></br>
-<br></br>
--->
-
-<!--
-<div align = "center">
-
-<p>
-<a class = "button" href = "#">Facebook</a> <a class = "button" href = "#">Twitter</a>
-</p>
-
-<br></br>
-<br></br>
-<input type="text" placeholder="Name" alt = "hello"/>
-<br></br>
-<input type="textarea" placeholder="Email" alt = "hello"/>
-</div>
-<br></br>
-<br></br>
--->
-
-
-
-
+    
 </body>
 
-<script> 
-var index = 1;
-var greetindex =1;
-var myVar=setInterval(function(){WorkSwapFunc()},3000);
-var myVar2=setInterval(function(){GreetSwapFunc()},3000);
-    
-function WorkSwapFunc() {
-    var work = ["PROGRAMMER.", "WEB DEVELOPER.", "MUSIC PRODUCER."];
-    document.getElementById("work").innerHTML = work[index];
-    $("#work").hide().fadeIn(300);
-    index+=1;
-    if (index > 2)
-    {
-    index = 0;
-    }
-}
-    
-function GreetSwapFunc() {
-    var greetinglist = ["HELLO,", "NICE TO MEET YOU,", "HI THERE!"];
-    document.getElementById("greeting").innerHTML = greetinglist[greetindex];
-    $("#greeting").hide().fadeIn(300);
-    greetindex+=1;
-    if (greetindex > 2)
-    {
-    greetindex = 0;
-    }
-}
+<script>
+$("#myName").hide();
+$("#description").hide();
 
-
+$(".first").hide().fadeIn(700, function()
+{
+    $("#myName").hide().fadeIn(700, function()
+    {
+        $("#description").hide().fadeIn(700);
+    
+    });
+});
+    
 </script>
+
+<footer>
+    
+</footer>
 
 
 </html>
-
-

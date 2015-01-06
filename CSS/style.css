@@ -1,0 +1,51 @@
+/*Font sizes*/
+/*Font weights*/
+* {
+  font-family: "Roboto", sans-serif; }
+
+body {
+  background-color: #86E2D5;
+  font-family: "Roboto", sans-serif;
+  color: white; }
+
+.type {
+  /*That's it. Enjoy!!! :) */ }
+  .type h1 {
+    color: white;
+    font-size: 120px;
+    font-weight: 700; }
+  .type p {
+    color: white;
+    font-size: 16px;
+    font-weight: 400; }
+
+.type-container {
+  width: 350px;
+  margin-top: 100px;
+  text-align: center;
+  padding: 1em 1em 1em 1em; }
+
+.first {
+  border-bottom: 5px white solid; }
+
+#firstText {
+  padding-top: 1em; }
+
+#myName {
+  font-size: 24px;
+  font-weight: 300;
+  margin-top: 2em;
+  margin-bottom: 1em; }
+
+#description {
+  font-size: 17px;
+  font-weight: 300; }
+
+.outer-container {
+  background-color: #F62459;
+  max-width: 400px;
+  height: 500px;
+  -webkit-box-shadow: 10px 10px 10px #888888;
+  box-shadow: 10px 10px 10px #888888; }
+
+/*# sourceMappingURL=style.css.map */
