@@ -26,6 +26,7 @@ body {
   padding: 1em 1em 1em 1em; }
 
 .first {
+  display: none;
   border-bottom: 5px white solid; }
 
 #firstText {
@@ -35,17 +36,20 @@ body {
   font-size: 24px;
   font-weight: 300;
   margin-top: 2em;
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  display: none; }
 
 #description {
   font-size: 17px;
-  font-weight: 300; }
+  font-weight: 300;
+  font-family: "Poiret One", cursive; }
 
 .outer-container {
   background-color: #F62459;
   max-width: 400px;
   height: 500px;
   -webkit-box-shadow: 10px 10px 10px #888888;
-  box-shadow: 10px 10px 10px #888888; }
+  box-shadow: 10px 10px 10px #888888;
+  border-radius: 5px; }
 
 /*# sourceMappingURL=style.css.map */

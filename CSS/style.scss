@@ -2,7 +2,9 @@ $bright-red: #F62459;
 $green-accent: #86E2D5;
 $black: #424224;
 $Roboto: 'Roboto', sans-serif;
+$Poiret: 'Poiret One', cursive;
 $yellow: #F5D76E;
+
 
 
 /*Font sizes*/
@@ -66,7 +68,7 @@ body
 
 
 .first {
- 
+    display: none;
     border-bottom: 5px white solid; 
 }
 
@@ -79,12 +81,13 @@ body
     font-weight: $light;   
     margin-top: 2em; 
     margin-bottom: 1em; 
-   
+   display: none;
 }
 
 #description {
     font-size: ($medium)-3;
     font-weight: $light; 
+    font-family: $Poiret;
 }
 
 .outer-container {
@@ -93,5 +96,6 @@ body
     height: 500px;
         -webkit-box-shadow: 10px 10px 10px #888888;
     box-shadow: 10px 10px 10px #888888;
+    border-radius: 5px;
     
 }

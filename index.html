@@ -8,8 +8,13 @@
 <link rel="stylesheet" type="text/css" href="/CSS/style.css">
 <!--Google Fonts--> 
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
 <!--Javascript-->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hi, I'm Alex Valera</title>
+
 </head>
     
 <body>
@@ -40,12 +45,16 @@
 <script>
 $("#myName").hide();
 $("#description").hide();
+$(".outer-container").hide();
 
-$(".first").hide().fadeIn(700, function()
+$(".outer-container").hide().fadeIn(700, function()
 {
-    $("#myName").hide().fadeIn(700, function()
+    $(".first").hide().fadeIn(700, function()
     {
-        $("#description").hide().fadeIn(700);
+        $("#myName").hide().fadeIn(700, function ()
+        {
+            $("#description").hide().fadeIn(700); 
+        });
     
     });
 });
