@@ -1,55 +1,194 @@
-/*Font sizes*/
-/*Font weights*/
-* {
-  font-family: "Roboto", sans-serif; }
+button:focus {
+  outline: none; }
 
-body {
-  background-color: #86E2D5;
+.intro {
   font-family: "Roboto", sans-serif;
+  color: #424242;
+  height: 500px;
+  background-size: cover;
+  width: 100%;
+  margin-bottom: 50px; }
+
+.logo {
+  font-family: "Roboto", sans-serif;
+  margin-top: 50px;
+  background-color: white;
+  max-width: 600px;
+  margin-bottom: 200px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  padding-left: 15px;
+  margin: auto;
+  margin-top: 100px;
+  text-align: center;
+  font-size: 50px;
+  color: #212121; }
+
+.white {
   color: white; }
 
-.type {
-  /*That's it. Enjoy!!! :) */ }
-  .type h1 {
-    color: white;
-    font-size: 120px;
-    font-weight: 700; }
-  .type p {
-    color: white;
-    font-size: 16px;
-    font-weight: 400; }
+#intro-text {
+  font-weight: 300; }
 
-.type-container {
-  width: 350px;
-  margin-top: 10%;
+.screencap {
+  width: 100%; }
+
+.bold {
+  font-weight: 700; }
+
+.black {
+  color: #424242;
+  margin-top: 0; }
+
+.accent {
+  color: #1abc9a; }
+
+p {
+  font-size: 13px; }
+
+.subtext {
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  color: #424242; }
+
+.screencap_block {
+  padding-top: 5px;
+  position: relative;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  z-index: 1; }
+  .screencap_block:hover {
+    opacity: 0.7;
+    -webkit-box-shadow: 5px 3px 10px 6px #ccc;
+    /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: 5px 4px 5px 6px #ccc;
+    /* Firefox 3.5 - 3.6 */
+    box-shadow: 6px 4px 5px 6px #ccc;
+    /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */ }
+
+img:hover {
+  cursor: pointer; }
+
+.info {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  margin: auto;
+  opacity: 0.0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+  .info:hover {
+    opacity: 1.0; }
+
+.block_info {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
   text-align: center;
-  padding: 1em 1em 1em 1em; }
+  margin-top: 25%;
+  opacity: 1;
+  color: black;
+  z-index: 99; }
 
-.first {
-  display: none;
-  border-bottom: 5px white solid; }
+.view {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  background-color: #1abc9a;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px 5px 10px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+  .view:hover {
+    background-color: white;
+    text-decoration: none;
+    color: #212121; }
 
-#firstText {
-  padding-top: 1em; }
+.intro-content {
+  text-align: center; }
 
-#myName {
-  font-size: 24px;
+.hello {
+  margin-bottom: 5px;
+  color: black;
+  padding: 20px;
+  text-align: left; }
+  @media screen and (max-width: 570px) {
+    .hello {
+      font-size: 50px; } }
+
+.bio {
+  font-size: 14px; }
+
+.content {
+  padding-bottom: 50px; }
+
+#name_title {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  color: black;
   font-weight: 300;
-  margin-top: 2em;
-  margin-bottom: 1em;
-  display: none; }
+  padding-bottom: 20px;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif; }
 
-#description {
-  font-size: 17px;
+#second_line {
+  font-size: 55px; }
+
+#first_line {
+  font-size: 80px; }
+
+.logo_container {
+  margin: auto; }
+
+#clean {
+  margin-bottom: 2px; }
+
+#av {
+  border: 2px solid black;
+  padding: 5px; }
+
+.bold {
+  font-weight: 700; }
+
+#subtitle {
+  font-size: 14px;
+  color: #212121; }
+
+.box {
+  background-color: white;
+  padding: 5px; }
+
+#nav {
+  font-family: "Roboto", sans-serif;
+  color: #424242;
+  font-size: 12px; }
+
+._view {
+  color: #212121;
+  text-decoration: none; }
+  ._view:hover {
+    background-color: white;
+    text-decoration: none;
+    color: #212121; }
+
+footer {
+  height: 50px; }
+
+#footer {
+  font-family: "Roboto", sans-serif;
+  color: #212121;
   font-weight: 300;
-  font-family: "Poiret One", cursive; }
-
-.outer-container {
-  background-color: #F62459;
-  max-width: 400px;
-  height: 500px;
-  -webkit-box-shadow: 10px 10px 10px #888888;
-  box-shadow: 10px 10px 10px #888888;
-  border-radius: 5px; }
+  font-size: 12px;
+  padding-top: 5px; }
 
 /*# sourceMappingURL=style.css.map */

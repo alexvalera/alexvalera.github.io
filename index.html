@@ -2,68 +2,95 @@
 <head>
          
 <!--CSS-->
-<link rel="stylesheet" type="text/css" href="/CSS/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="/CSS/prettify.css">
-<link rel="stylesheet" type="text/css" href="/CSS/animations.css">
-<link rel="stylesheet" type="text/css" href="/CSS/style.css">
+<link rel="stylesheet"  href="/CSS/bootstrap.css">
+<link rel="stylesheet"  href="/CSS/prettify.css">
+<link rel="stylesheet"  href="/CSS/animations.css">
+<link rel="stylesheet"  href="/CSS/style.css">
 <!--Google Fonts--> 
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:400,800' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Pinyon+Script' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,800' rel='stylesheet' type='text/css'>
 <!--Javascript-->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Hi, I'm Alex Valera</title>
-
-</head>
-    
+</head> 
 <body>
-
 <div class = "container-fluid">
     <div class = "row">
-        <div align = "center" class = "col-xs-12 col-s-12- col-m-12 type">
-            <div class = "outer-container floating">
-            <div class = "type-container">
-            <h1 class = "first" >Hello</h1>
-            <p id = "myName" align = center>My name is Alex Valera.</p>
-            <p id = "description" align = left>
-            I hail from the Washington DC metropolitan area, and I am a computer science
-        student at Binghamton University in upstate New York. I love creating beautiful websites 
-        and poweful programs that can help businesses, organizations, or everyone. 
-            <br></br>(This site is currently underconstruction) 
-            </p>
-            
-            </div>
+        <div align = "center" class = "intro col-xs-12">      
+            <div align ="center" class = "intro-content">           
+                <div id = "intro-text" class ="logo">                   
+                    <span id = "clean">Clean</span>
+                    <br>
+                    <span class = "accent" id = "ampersand">&amp;&amp;</span>
+                    <br>
+                    <span class ="bold" id ="bold">Bold</span>
+                    <section id = "links_title">
+                        <div id = "name_title">
+                            <span class = "bold" id = "av" >Alex Valera</span>
+                        </div>
+                        <p id = "subtitle">Programmer <span class= "bold">x</span> Designer</p>
+                        <nav id = "social_media_btn">
+                            <a id = "linkedIn" target = "_blank" href="http://www.linkedin.com/in/alexvalera"><img src = "./Images/Icons/linkedin.png" style = "height: 30px;"></img></a>
+                            <a id = "github" target = "_blank" href = "http://www.github.com/alexvalera"><img src = "./Images/Icons/github.png" style = "height: 30px;"></img></a>
+                        </nav>   
+                    </section>
+                </div>
             </div>
         </div>
     </div>
+</div>
+    
+<div class = "content container">
+    <div class = "center row">
+        <div class = "col-xs-12 col-sm-6 col-m-4">
+                    <div id = "sesh" class = "screencap_block"> 
+                        <div align = "center" class = "info">
+                            <h1 class ="bold block_info">LightSesh</h1>
+                            <p class = "subtitle">Web App Design/Development</p>
+                            <a target="_blank" class = "_view" href="http://www.alexvalera.me/LightSesh"><button class ="view" >Check it out</button></a>
+                        </div>
+                        <img class = "screencap" src = "Images/seshmock.png"></img>  
+                    </div>
+                    <div id = "hcn" class = "screencap_block"> 
+                        <div align = "center" class = "info">
+                            <h1 class ="bold block_info">Harrow Community Network <br>Sign Up Design</h1>
+                            <p class = "subtitle">UI Design</p>
+                        </div>
+                        <img class = "screencap" src = "Images/hcnmockup.png"></img>  
+                    </div>
+        </div>
+    
+        <div class = "col-xs-12 col-sm-6 col-m-4">
+                <div id = "freshsignup" class = "screencap_block"> 
+                    <div align = "center" class = "info">
+                        <h1 class ="bold block_info">Fresh Sign Up [Project]</h1>
+                        <p class = "subtitle">UI Design</p>
+                    </div>
+                    <img class = "screencap" src = "Images/freshsignupmock.png"></img>  
+                </div>
+                <div id = "casu" class = "screencap_block"> 
+                    <div align = "center" class = "info">
+                        <h1 class ="bold block_info "><span class = "box">CASU Landing Page</span></h1>
+                        <p class = "subtitle"><span class = "box">UI Design</span></p>
+                    </div>
+                    <img class = "screencap" src = "Images/casumock.png"></img>  
+                </div>
+        </div>
 
+
+    </div>
 </div>
     
 </body>
 
-<script>
-$("#myName").hide();
-$("#description").hide();
-$(".outer-container").hide();
 
-$(".outer-container").hide().fadeIn(700, function()
-{
-    $(".first").hide().fadeIn(700, function()
-    {
-        $("#myName").hide().fadeIn(700, function ()
-        {
-            $("#description").hide().fadeIn(700); 
-        });
-    
-    });
-});
-    
-</script>
-
-<footer>
-    
+<footer align = "center">
+<span id = "footer">| Like what you see? <a target="_blank" href="mailto:avalera1@binghamton.edu">Shoot me an email!</a> |</span>
+<script src="Javascript/main.js"></script>
 </footer>
-
-
 </html>
