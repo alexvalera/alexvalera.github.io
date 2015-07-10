@@ -50,7 +50,6 @@ outline:none;
 
 .screencap {
     width:100%;
-
 }
 
 .content {
@@ -98,6 +97,7 @@ p {
     
     &:hover
     {
+    cursor: pointer;
     opacity:0.7;
     //shadow effect//
     -webkit-box-shadow: 5px 3px 10px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
@@ -275,4 +275,42 @@ footer {
     font-weight: 300;
     font-size: 12px;
     padding-top:5px;
+}
+
+.back {
+    margin: 20px;
+}
+
+.headline {
+    font-size: 20px;
+    font-family: $roboto;
+}
+
+.box-outline {
+    border: 5px solid black;
+    width: 300px;
+    padding: 10px;
+}
+
+.box-container {
+    margin: 0 auto;
+    align: center;
+}
+
+.tasks {
+    font-size: 25px;
+}
+
+.image-holder {
+    max-width:1000px;
+    margin: auto;
+}
+
+.about {
+    font-size: 16px;
+    font-family: $roboto;
+}
+
+.middle {
+    margin: auto;
 }
