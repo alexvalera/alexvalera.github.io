@@ -24,7 +24,7 @@ button:focus {
   border: 10px solid #F62459; }
   @media screen and (max-width: 576px) {
     .logo {
-      font-size: 60px; } }
+      font-size: 50px; } }
 
 .white {
   color: white; }
@@ -137,7 +137,7 @@ img:hover {
   padding-bottom: 50px; }
   @media screen and (max-width: 576px) {
     .content {
-      padding-top: 300px; } }
+      padding-top: 200px; } }
 
 #name_title {
   padding-top: 30px;
