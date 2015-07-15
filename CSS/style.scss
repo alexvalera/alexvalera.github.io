@@ -2,8 +2,8 @@
 $merri:'Merriweather Sans', sans-serif;
 $roboto: 'Roboto', sans-serif;
 $default: 16px;
-$accent: #1abc9a;
-$break-small: 570px;
+$accent: #F62459;
+$break-small: 576px;
 button:focus
 {
 outline:none;
@@ -22,18 +22,22 @@ outline:none;
 
 .logo {
     font-family: $roboto;
-    margin-top: 50px;
     background-color: white;
     max-width: 600px;
-    margin-bottom: 200px;
-    padding-top: 10px;
+//    margin-bottom: 200px;
+    padding-top: 50px;
     padding-bottom:50px;
     padding-left: 15px;
     margin: auto;
-    margin-top: 100px;
-    text-align: center;
-    font-size: 50px;
+    margin-top: 50px;
+    text-align: left;
+    font-size: 80px;
     color: #212121;
+    border: 10px solid $accent;
+    @media screen and (max-width: $break-small)
+    {
+        font-size: 60px;
+    }
 
 }
 
@@ -65,7 +69,7 @@ outline:none;
 }
 
 .accent {
-    color: #1abc9a;
+    color: $accent;
 }
 
 p {
@@ -173,6 +177,7 @@ img
 .intro-content {
  text-align:center;
 
+
 }
 
 .hello {
@@ -191,7 +196,12 @@ img
 }
 
 .content {
+    padding-top: 250px;
     padding-bottom: 50px;
+    @media screen and (max-width: $break-small)
+    {
+        padding-top: 300px;
+    }
 }
 
 #name_title {
@@ -313,4 +323,10 @@ footer {
 
 .middle {
     margin: auto;
+}
+
+
+
+#scroll-down {
+    margin-top:20px;
 }
