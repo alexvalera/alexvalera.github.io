@@ -4,6 +4,7 @@ $roboto: 'Roboto', sans-serif;
 $default: 16px;
 $accent: #F62459;
 $break-small: 576px;
+$break-medium: 768px;
 button:focus
 {
 outline:none;
@@ -34,6 +35,7 @@ outline:none;
     font-size: 80px;
     color: #212121;
     border: 10px solid $accent;
+    display: none;
     @media screen and (max-width: $break-small)
     {
         font-size: 45px;
@@ -89,7 +91,7 @@ p {
 }
 
 .screencap_block {
-    padding-top:5px;
+    padding-top:20px;
     position:relative;
     
     //css-transitions//
@@ -107,6 +109,8 @@ p {
     -webkit-box-shadow: 5px 3px 10px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
     -moz-box-shadow:    5px 4px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
    box-shadow:         6px 4px 5px 6px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+        
+    
     }
 }
 
@@ -312,8 +316,9 @@ footer {
 }
 
 .image-holder {
-    max-width:1000px;
+    max-width:800px;
     margin: auto;
+    padding-top: 20px;
 }
 
 .about {
@@ -329,4 +334,70 @@ footer {
 
 #scroll-down {
     margin-top:20px;
+}
+
+
+
+.description {
+    width: 100%;
+    text-align:left;
+}
+
+.description-container {
+     max-width: 550px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 10px;
+    padding-bottom: 30px;
+    @media screen and (max-width: $break-small)
+    {
+        max-width: 350px;
+    }
+
+}
+
+
+
+.backButton {
+    border-left: 2px solid black;
+    padding-left: 5px;
+    width:60px;
+    
+}
+
+.btn {
+
+    border-radius: 0;
+    border: 2px solid black;
+    -webkit-transition: all 1s ease-in;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all .5s ease-out;
+    
+    &:hover
+    {
+    color: $accent;
+    border: 2px solid $accent;
+
+    
+    }
+    
+}
+
+
+
+#links_title {
+    display:none;
+}
+
+.fadeInContent {
+    display:none;
+}
+
+.boxes {
+    width:100%;
+}
+
+.boxesContainer {
+    max-width:800px;
 }

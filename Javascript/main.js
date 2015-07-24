@@ -25,5 +25,15 @@ Banner text Fade In Entrance
 //        });
 //    });
 //});
-$('#bold').hide(); 
-$('#bold').fadeIn(1000);
+
+$('.logo').hide(); 
+$('#links_title').hide(); 
+$('.fadeInContent').hide(); 
+$('.fadeInContent').fadeIn(1500);
+$('.logo').fadeIn(1500, function()
+{
+$('#links_title').fadeIn(1000);
+});
+
+
+

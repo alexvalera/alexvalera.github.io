@@ -21,7 +21,8 @@ button:focus {
   text-align: left;
   font-size: 80px;
   color: #212121;
-  border: 10px solid #F62459; }
+  border: 10px solid #F62459;
+  display: none; }
   @media screen and (max-width: 576px) {
     .logo {
       font-size: 45px; } }
@@ -54,7 +55,7 @@ p {
   color: #424242; }
 
 .screencap_block {
-  padding-top: 5px;
+  padding-top: 20px;
   position: relative;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -218,8 +219,9 @@ footer {
   font-size: 25px; }
 
 .image-holder {
-  max-width: 1000px;
-  margin: auto; }
+  max-width: 800px;
+  margin: auto;
+  padding-top: 20px; }
 
 .about {
   font-size: 16px;
@@ -230,5 +232,47 @@ footer {
 
 #scroll-down {
   margin-top: 20px; }
+
+.description {
+  width: 100%;
+  text-align: left; }
+
+.description-container {
+  max-width: 550px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 10px;
+  padding-bottom: 30px; }
+  @media screen and (max-width: 576px) {
+    .description-container {
+      max-width: 350px; } }
+
+.backButton {
+  border-left: 2px solid black;
+  padding-left: 5px;
+  width: 60px; }
+
+.btn {
+  border-radius: 0;
+  border: 2px solid black;
+  -webkit-transition: all 1s ease-in;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all .5s ease-out; }
+  .btn:hover {
+    color: #F62459;
+    border: 2px solid #F62459; }
+
+#links_title {
+  display: none; }
+
+.fadeInContent {
+  display: none; }
+
+.boxes {
+  width: 100%; }
+
+.boxesContainer {
+  max-width: 800px; }
 
 /*# sourceMappingURL=style.css.map */
