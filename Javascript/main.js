@@ -35,5 +35,19 @@ $('.logo').fadeIn(1500, function()
 $('#links_title').fadeIn(1000);
 });
 
+var vid = document.getElementById("hometownVid");
 
+
+$(document).on('click','#replayHometown',function(){
+    document.getElementById("replayHometown").innerHTML = "Play";
+    vid.pause();
+    vid.currentTime = '0';
+    vid.play();
+});
+
+
+  document.getElementById('hometownVid').addEventListener('ended',handle,false);
+    function handle(e) {
+        document.getElementById("replayHometown").innerHTML = "Replay";
+    }
 

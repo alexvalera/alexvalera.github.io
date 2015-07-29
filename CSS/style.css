@@ -55,7 +55,7 @@ p {
   color: #424242; }
 
 .screencap_block {
-  padding-top: 20px;
+  margin-top: 20px;
   position: relative;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -138,7 +138,7 @@ img:hover {
   padding-bottom: 50px; }
   @media screen and (max-width: 576px) {
     .content {
-      padding-top: 150px; } }
+      padding-top: 100px; } }
 
 #name_title {
   padding-top: 30px;
@@ -273,6 +273,50 @@ footer {
   width: 100%; }
 
 .boxesContainer {
+  max-width: 800px; }
+
+.video-holder {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+.descriptionVideo {
+  padding: 30px; }
+
+.video {
+  padding-top: 50px;
+  width: 100%; }
+
+video {
+  height: 480; }
+
+.videoBox {
+  border: 2px solid black; }
+
+.descriptionVideoText {
+  font-size: 30px; }
+
+.replay {
+  background-color: white;
+  font-color: black;
+  font-size: 15px; }
+
+.btnYellow {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 0;
+  border: 2px solid black;
+  -webkit-transition: all 1s ease-in;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all .5s ease-out; }
+  .btnYellow:hover {
+    color: #F5D76E;
+    border: 2px solid #F5D76E; }
+
+.replay-container {
+  margin-bottom: 40px; }
+
+#hometownVidContainer {
   max-width: 800px; }
 
 /*# sourceMappingURL=style.css.map */
