@@ -288,6 +288,7 @@ footer {
     color: #212121;
     font-weight: 300;
     font-size: 12px;
+   
     padding-top:5px;
 }
 
@@ -317,6 +318,7 @@ footer {
 
 .image-holder {
     max-width:800px;
+    
     margin: auto;
     padding-top: 20px;
 }
@@ -462,4 +464,11 @@ video {
 
 #hometownVidContainer {
     max-width: 800px;
+}
+
+.thing {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
 }
