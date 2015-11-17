@@ -326,4 +326,11 @@ video {
   margin-right: auto;
   margin: 0 auto; }
 
+.checkOut {
+  background-color: #F62459;
+  color: white;
+  border-color: #F62459; }
+  .checkOut:hover {
+    background-color: white; }
+
 /*# sourceMappingURL=style.css.map */
