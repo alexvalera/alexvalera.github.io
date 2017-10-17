@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/alexvalera/alexvalera.github.io/issues"
   },
-  "homepage": "https://github.com/alexvalera/alexvalera.github.io#readme"
+  "homepage": "https://github.com/alexvalera/alexvalera.github.io#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0"
+  }
 }
