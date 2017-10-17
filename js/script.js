@@ -34,8 +34,7 @@ const iterateGroups = ($elem, groups, index) => {
       $('.homepage-header__subtitle-container').addClass('anim-slide-up');
       $('.homepage-header__subtitle-container').addClass('show');
       $('.homepage-header__icon-container').addClass('anim-slide-up');
-      $('.homepage-header__icon-container').addClass('show');
-      $('body').css('overflow', 'auto'); 
+      $('.homepage-header__icon-container').addClass('show'); 
     }    
   }, 100);
 };

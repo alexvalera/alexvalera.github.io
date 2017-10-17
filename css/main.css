@@ -17,9 +17,6 @@ body {
 img {
   width: 100%; }
 
-.home {
-  overflow: hidden; }
-
 /*Nav*/
 .top-nav {
   position: fixed;
