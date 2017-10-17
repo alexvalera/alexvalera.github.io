@@ -40,7 +40,7 @@ const iterateGroups = ($elem, groups, index) => {
   }, 100);
 };
 
-$(window).on('load', () => {
+(()=> {
   if ($('body').hasClass('home')) {
     iterateGroups($('.homepage-header__groups'), GROUPS);
   }
@@ -48,4 +48,5 @@ $(window).on('load', () => {
     $('.homepage-header__icon-container').addClass('anim-slide-up');
     $('.homepage-header__icon-container').addClass('show');
   }
-}); 
+})();
+
