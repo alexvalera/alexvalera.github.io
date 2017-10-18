@@ -1,9 +1,9 @@
+'use strict';
 
+var GROUPS = ['friends', 'family', 'millenials', 'baby boomers', 'kids', 'mothers', 'fathers', 'techies', 'hipsters', 'old schoolers', 'artists', 'musicians', 'teachers', 'students', 'lawyers', 'accountants', 'doctors', 'otakus', 'nurses', 'everyone'];
 
-const GROUPS = ['friends', 'family', 'millenials', 'baby boomers', 'kids', 'mothers', 'fathers', 'techies', 'hipsters', 'old schoolers', 'artists', 'musicians', 'teachers', 'students', 'lawyers', 'accountants', 'doctors', 'otakus', 'nurses', 'everyone'];
-
-const iterateGroups = ($elem, groups, index) => {
-  setTimeout(() => {
+var iterateGroups = function iterateGroups($elem, groups, index) {
+  setTimeout(function () {
     index = index == undefined ? 0 : index;
     $elem.text(groups[index]);
     if (index != groups.length - 1) {
@@ -17,7 +17,7 @@ const iterateGroups = ($elem, groups, index) => {
   }, 100);
 };
 
-(() => {
+(function () {
   if ($('body').hasClass('home')) {
     iterateGroups($('.homepage-header__groups'), GROUPS);
   } else {
