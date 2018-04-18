@@ -284,6 +284,7 @@ img {
 }
 
 .simple-media__container {
+  text-align: center;
   width: 320px;
   @include width-more-than($tablet-breakpoint) {
     width: 600px; 
@@ -291,6 +292,12 @@ img {
   @include width-more-than($desktop-breakpoint) {
     width: 800px;
   }
+}
+
+.simple-media__item {
+  display: inline-block;
+  margin: 0px 10px; 
+  width: 25%; 
 }
 
 .simple-media__img {

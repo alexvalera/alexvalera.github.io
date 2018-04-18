@@ -232,6 +232,7 @@ img {
   justify-content: center; }
 
 .simple-media__container {
+  text-align: center;
   width: 320px; }
   @media (min-width: 768px) {
     .simple-media__container {
@@ -239,6 +240,11 @@ img {
   @media (min-width: 1280px) {
     .simple-media__container {
       width: 800px; } }
+
+.simple-media__item {
+  display: inline-block;
+  margin: 0px 10px;
+  width: 25%; }
 
 .simple-media__img {
   width: 100%; }
