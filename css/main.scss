@@ -109,6 +109,11 @@ img {
   font-weight: 300;
 }
 
+.homepage-header__icon-link {
+  display: block;
+  cursor: pointer;
+}
+
 .homepage-header__groups {
   color: $brand;
   //border-bottom: 5px solid $brand;

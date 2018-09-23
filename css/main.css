@@ -85,6 +85,10 @@ img {
   font-size: 20px;
   font-weight: 300; }
 
+.homepage-header__icon-link {
+  display: block;
+  cursor: pointer; }
+
 .homepage-header__groups {
   color: #F62459; }
 

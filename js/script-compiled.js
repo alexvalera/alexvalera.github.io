@@ -24,4 +24,11 @@ var iterateGroups = function iterateGroups($elem, groups, index) {
     $('.homepage-header__icon-container').addClass('anim-slide-up');
     $('.homepage-header__icon-container').addClass('show');
   }
+
+  var scrollDownLink = document.querySelector('.homepage-header__icon-link');
+  scrollDownLink.addEventListener('click', function () {
+    var firstWorkSection = document.querySelector('.work-image-section');
+    $("html, body").animate({ scrollTop: $(firstWorkSection).position().top });
+  });
 })();
+
