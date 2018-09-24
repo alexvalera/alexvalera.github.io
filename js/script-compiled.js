@@ -26,6 +26,9 @@ var iterateGroups = function iterateGroups($elem, groups, index) {
   }
 
   var scrollDownLink = document.querySelector('.homepage-header__icon-link');
+  if (!scrollDownLink) {
+    return false;
+  }
   scrollDownLink.addEventListener('click', function () {
     var firstWorkSection = document.querySelector('.work-image-section');
     $("html, body").animate({ scrollTop: $(firstWorkSection).position().top });

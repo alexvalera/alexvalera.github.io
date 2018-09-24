@@ -49,6 +49,9 @@ const iterateGroups = ($elem, groups, index) => {
   }
 
   const scrollDownLink = document.querySelector('.homepage-header__icon-link'); 
+  if (!scrollDownLink) {
+    return false; 
+  }
   scrollDownLink.addEventListener('click', ()=>{
     const firstWorkSection = document.querySelector('.work-image-section');
     $("html, body").animate({ scrollTop: $(firstWorkSection).position().top});
