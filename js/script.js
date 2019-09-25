@@ -31,7 +31,7 @@ const main = {
     if (document.querySelector('body').classList.contains('home')) {
       this.iterateGroups(document.querySelector('.homepage-header__groups'), GROUPS);
     } else {
-      document.querySelector('homepage-header__icon-container').classList.add('anim-slide-up', 'show');
+      document.querySelector('.homepage-header__icon-container').classList.add('anim-slide-up', 'show');
     }
     const scrollDownLink = document.querySelector('.homepage-header__icon-link'); 
     if (scrollDownLink) {
