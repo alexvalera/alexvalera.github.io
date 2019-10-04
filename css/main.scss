@@ -9,7 +9,7 @@ $tablet-breakpoint: 768px;
 $desktop-breakpoint: 1280px;
 
 * {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Avenir', sans-serif;
 }
 
 body {
@@ -56,7 +56,8 @@ img {
 .top-nav__logo {
   text-decoration: none;
   padding: 10px 15px; 
-  background-color: #333;
+  background-image: linear-gradient(3deg, #FF512F 0%, #DD2476 100%);
+  border-radius: 5px;
   color: white;
   font-weight: 700;
 }
@@ -65,21 +66,20 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  margin: 40px 0px; 
-  height: calc(100vh - 80px);
-  width: 100%;  
+  margin: 0 auto; 
+  height: 100vh;
+  line-height: 1.5;
+  max-width: 300px;
+  @include width-more-than($tablet-breakpoint) {
+    max-width: 630px;
+  }
+  @include width-more-than($desktop-breakpoint) {
+    max-width: 800px;
+  }
 }
 
 .homepage-header__logo-container {
-
-  width: 75%; 
-  max-width: 500px;
-  text-align: center;
-  @include width-more-than($tablet-breakpoint) {
-    width: 60%;
-  }
-  
+  text-align: left;
 }
 
 .homepage-header__logo-text {
@@ -95,18 +95,34 @@ img {
   }
 }
 .homepage-header__subtitle-container {
+  text-align: left;
   margin-top: 20px;
   opacity: 0;
 }
 .homepage-header__subtitle {
-  font-size: 16px; 
+  font-size: 20px; 
   color: #333; 
   font-weight: 400; 
+  @include width-more-than($tablet-breakpoint) {
+    font-size: 28px; 
+  }
 }
 
 .homepage-header__divider {
   font-size: 20px;
   font-weight: 300;
+}
+
+.homepage-header__seperator {
+  display: inline-block;
+  margin: 0 15px; 
+  width: 25px;
+  height: 4px;
+  vertical-align: middle;
+  background-color: black;
+  @include width-more-than($tablet-breakpoint) {
+    width: 50px;
+  }
 }
 
 .homepage-header__icon-link {
@@ -115,10 +131,11 @@ img {
 }
 
 .homepage-header__groups {
-  color: $brand;
+  //color: $brand;
   //border-bottom: 5px solid $brand;
 }
 .homepage-header__icon-container {
+  align-self: center;
   opacity: 0;
   position: absolute;
   bottom: 20px;
@@ -138,6 +155,7 @@ img {
 .homepage-header__scroll-text {
   font-size: 14px; 
   color: #7a7a7a;
+  cursor: pointer;
 }
 .linkedin-icon-link {
   cursor: pointer;

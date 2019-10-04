@@ -26,19 +26,27 @@ const GROUPS = [
 const main = {
   init() {
     this.animateLanding();
+    this.addEventListeners();
   }, 
+  addEventListeners() {
+    const scrollDownLink = document.querySelector('.homepage-header__icon-link'); 
+    const scrollDownText = document.querySelector('.homepage-header__scroll-text');
+    const firstWorkSection = document.querySelector('.work-image-section');
+    this.addScrollDown(scrollDownLink, firstWorkSection);
+    this.addScrollDown(scrollDownText, firstWorkSection);
+  },
+  addScrollDown(scrollNode, firstWorkSection) {
+    if (scrollNode) {
+      scrollNode.addEventListener('click', () => {
+        $("html, body").animate({ scrollTop: $(firstWorkSection).position().top - 100});
+      });
+    }
+  },
   animateLanding() {
     if (document.querySelector('body').classList.contains('home')) {
       this.iterateGroups(document.querySelector('.homepage-header__groups'), GROUPS);
     } else {
       document.querySelector('.homepage-header__icon-container').classList.add('anim-slide-up', 'show');
-    }
-    const scrollDownLink = document.querySelector('.homepage-header__icon-link'); 
-    if (scrollDownLink) {
-      scrollDownLink.addEventListener('click', ()=>{
-        const firstWorkSection = document.querySelector('.work-image-section');
-        $("html, body").animate({ scrollTop: $(firstWorkSection).position().top});
-      });
     }
   },
   iterateGroups(elem, groups, index) {
@@ -52,7 +60,7 @@ const main = {
         document.querySelector('.homepage-header__subtitle-container').classList.add('anim-slide-up', 'show');
         document.querySelector('.homepage-header__icon-container').classList.add('anim-slide-up', 'show');
       }    
-    }, 100);
+    }, 0);
   }
 };
 
