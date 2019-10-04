@@ -196,7 +196,7 @@ img {
   animation-duration: 2s; }
 
 .homepage-header__subtitle-container.anim-slide-up {
-  animation-duration: 0.5s; }
+  animation-duration: 1s; }
 
 .show {
   opacity: 1; }

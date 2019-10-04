@@ -40,7 +40,7 @@ var main = {
         document.querySelector('.homepage-header__subtitle-container').classList.add('anim-slide-up', 'show');
         document.querySelector('.homepage-header__icon-container').classList.add('anim-slide-up', 'show');
       }
-    }, 0);
+    }, 100);
   }
 };
 
