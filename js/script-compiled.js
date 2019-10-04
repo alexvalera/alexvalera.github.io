@@ -5,19 +5,27 @@ var GROUPS = ['friends', 'family', 'millenials', 'grand parents', 'kids', 'mothe
 var main = {
   init: function init() {
     this.animateLanding();
+    this.addEventListeners();
+  },
+  addEventListeners: function addEventListeners() {
+    var scrollDownLink = document.querySelector('.homepage-header__icon-link');
+    var scrollDownText = document.querySelector('.homepage-header__scroll-text');
+    var firstWorkSection = document.querySelector('.work-image-section');
+    this.addScrollDown(scrollDownLink, firstWorkSection);
+    this.addScrollDown(scrollDownText, firstWorkSection);
+  },
+  addScrollDown: function addScrollDown(scrollNode, firstWorkSection) {
+    if (scrollNode) {
+      scrollNode.addEventListener('click', function () {
+        $("html, body").animate({ scrollTop: $(firstWorkSection).position().top - 100 });
+      });
+    }
   },
   animateLanding: function animateLanding() {
     if (document.querySelector('body').classList.contains('home')) {
       this.iterateGroups(document.querySelector('.homepage-header__groups'), GROUPS);
     } else {
       document.querySelector('.homepage-header__icon-container').classList.add('anim-slide-up', 'show');
-    }
-    var scrollDownLink = document.querySelector('.homepage-header__icon-link');
-    if (scrollDownLink) {
-      scrollDownLink.addEventListener('click', function () {
-        var firstWorkSection = document.querySelector('.work-image-section');
-        $("html, body").animate({ scrollTop: $(firstWorkSection).position().top });
-      });
     }
   },
   iterateGroups: function iterateGroups(elem, groups, index) {
