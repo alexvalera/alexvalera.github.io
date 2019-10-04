@@ -1,6 +1,6 @@
 'use strict';
 
-var GROUPS = ['friends', 'family', 'millenials', 'grand parents', 'kids', 'mothers', 'fathers', 'techies', 'hipsters', 'old schoolers', 'artists', 'musicians', 'teachers', 'students', 'lawyers', 'accountants', 'doctors', 'otakus', 'nurses', 'everyone'];
+var GROUPS = ['friends', 'family', 'millenials', 'grand parents', 'kids', 'parents', 'techies', 'hipsters', 'artists', 'musicians', 'teachers', 'students', 'lawyers', 'banks', 'doctors', 'nurses', 'everyone'];
 
 var main = {
   init: function init() {
