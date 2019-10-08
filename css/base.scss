@@ -1,0 +1,46 @@
+* {
+  font-family: 'Avenir', sans-serif;
+}
+
+body {
+  margin: 0; 
+}
+
+img {
+  width: 100%; 
+}
+
+
+.grid {
+  &-row {
+    margin: 0px 20px; 
+    @include width-more-than($tablet-breakpoint) {
+      margin: 0px 60px; 
+    }
+    @include width-more-than($desktop-breakpoint) {
+      margin: 0px 100px; 
+    }
+  }
+}
+
+.anim-slide-up {
+  animation-name: slideUp; 
+  animation-duration: 2s; 
+}
+
+.show {
+  opacity: 1; 
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0; 
+    transform: translateY(-10px); 
+
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px); 
+  }
+}
+

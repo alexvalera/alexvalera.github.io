@@ -4,19 +4,32 @@
 body {
   margin: 0; }
 
-/*GRID*/
-.grid .grid-row {
-  margin: 0px 20px; }
-  @media (min-width: 768px) {
-    .grid .grid-row {
-      margin: 0px 60px; } }
-  @media (min-width: 1280px) {
-    .grid .grid-row {
-      margin: 0px 100px; } }
-
 img {
   width: 100%; }
 
+.grid-row {
+  margin: 0px 20px; }
+  @media (min-width: 768px) {
+    .grid-row {
+      margin: 0px 60px; } }
+  @media (min-width: 1280px) {
+    .grid-row {
+      margin: 0px 100px; } }
+
+.anim-slide-up {
+  animation-name: slideUp;
+  animation-duration: 2s; }
+
+.show {
+  opacity: 1; }
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(-10px); }
+  to {
+    opacity: 1;
+    transform: translateY(0px); } }
 /*Nav*/
 .top-nav {
   position: fixed;
@@ -128,14 +141,8 @@ img {
   color: #7a7a7a;
   cursor: pointer; }
 
-.linkedin-icon-link {
-  cursor: pointer;
-  vertical-align: sub;
-  padding: 0 3px; }
-
-.linkedin-icon {
-  width: 20px;
-  height: 20px; }
+.homepage-header__subtitle-container.anim-slide-up {
+  animation-duration: 1s; }
 
 .work-image-section {
   display: flex;
@@ -190,16 +197,6 @@ img {
   margin: 10px 0px;
   font-size: 18px;
   font-weight: 300; }
-
-.anim-slide-up {
-  animation-name: slideUp;
-  animation-duration: 2s; }
-
-.homepage-header__subtitle-container.anim-slide-up {
-  animation-duration: 1s; }
-
-.show {
-  opacity: 1; }
 
 .work-info {
   display: flex;
@@ -268,13 +265,5 @@ img {
 
 .simple-media__img {
   width: 100%; }
-
-@keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(-10px); }
-  to {
-    opacity: 1;
-    transform: translateY(0px); } }
 
 /*# sourceMappingURL=main.css.map */
