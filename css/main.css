@@ -20,9 +20,6 @@ img {
   animation-name: slideUp;
   animation-duration: 2s; }
 
-.show {
-  opacity: 1; }
-
 @keyframes slideUp {
   from {
     opacity: 0;
@@ -142,7 +139,11 @@ img {
   cursor: pointer; }
 
 .homepage-header__subtitle-container.anim-slide-up {
-  animation-duration: 1s; }
+  animation-duration: 1s;
+  opacity: 1; }
+
+.homepage-header__icon-container.anim-slide-up.show {
+  opacity: 1; }
 
 .work-image-section {
   display: flex;
