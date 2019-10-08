@@ -122,4 +122,9 @@
 
 .homepage-header__subtitle-container.anim-slide-up {
   animation-duration: 1s;
+  opacity: 1;
+}
+
+.homepage-header__icon-container.anim-slide-up.show {
+  opacity: 1;
 }
