@@ -42,7 +42,7 @@ const main = {
   animateLanding() {
     if (document.querySelector('body').classList.contains('home')) {
       this.iterateGroups(document.querySelector('.homepage-header__groups'), GROUPS);
-    } else {
+    } else if (document.querySelector('.homepage-header__icon-container')) {
       document.querySelector('.homepage-header__icon-container').classList.add('anim-slide-up', 'show');
     }
   },
