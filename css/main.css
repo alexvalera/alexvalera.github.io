@@ -312,6 +312,16 @@ img {
   color: #737373;
 }
 
+@keyframes fadeIn {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
 .simple-media {
   margin: 50px 0px;
   width: 100%;
@@ -321,6 +331,8 @@ img {
 }
 
 .simple-media__container {
+  opacity: 1;
+  animation: fadeIn 2s;
   text-align: center;
   width: 320px;
 }
