@@ -1,21 +1,22 @@
 
 
 const GROUPS = [
-  'friends', 
-  'family', 
-  'millenials', 
+  'friends',
+  'family',
+  'gen-z',
+  'millenials',
   'grand parents',
-  'kids', 
-  'parents', 
-  'techies', 
-  'hipsters', 
-  'artists', 
-  'musicians', 
-  'teachers', 
+  'kids',
+  'parents',
+  'techies',
+  'hipsters',
+  'artists',
+  'musicians',
+  'teachers',
   'students',
-  'lawyers', 
-  'banks', 
-  'doctors', 
+  'lawyers',
+  'banks',
+  'doctors',
   'nurses',
   'everyone'
 ];
@@ -24,9 +25,9 @@ const main = {
   init() {
     this.animateLanding();
     this.addEventListeners();
-  }, 
+  },
   addEventListeners() {
-    const scrollDownLink = document.querySelector('.homepage-header__icon-link'); 
+    const scrollDownLink = document.querySelector('.homepage-header__icon-link');
     const scrollDownText = document.querySelector('.homepage-header__scroll-text');
     const firstWorkSection = document.querySelector('.work-image-section');
     this.addScrollDown(scrollDownLink, firstWorkSection);
@@ -35,7 +36,7 @@ const main = {
   addScrollDown(scrollNode, firstWorkSection) {
     if (scrollNode) {
       scrollNode.addEventListener('click', () => {
-        $("html, body").animate({ scrollTop: $(firstWorkSection).position().top - 100});
+        $("html, body").animate({ scrollTop: $(firstWorkSection).position().top - 100 });
       });
     }
   },
@@ -47,19 +48,19 @@ const main = {
     }
   },
   iterateGroups(elem, groups, index) {
-    setTimeout(()=> {
+    setTimeout(() => {
       index = index == undefined ? 0 : index;
       elem.innerText = groups[index];
       if (index != groups.length - 1) {
-        this.iterateGroups(elem, groups, index+1);  
+        this.iterateGroups(elem, groups, index + 1);
       }
       else {
         document.querySelector('.homepage-header__subtitle-container').classList.add('anim-slide-up', 'show');
         document.querySelector('.homepage-header__icon-container').classList.add('anim-slide-up', 'show');
-      }    
+      }
     }, 100);
   }
 };
 
-main.init(); 
+main.init();
 
